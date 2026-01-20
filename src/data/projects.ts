@@ -2,52 +2,73 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
     {
-        id: "proje-1",
-        title: "Endüstriyel Elektrik Panosu",
-        description: "400A Ana Dağıtım Panosu",
-        thumbnail: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=2070&auto=format&fit=crop",
+        id: "e210",
+        title: "Schaltschrank 1",
+        description: "Industrielle Projektlösung",
+        thumbnail: "/images/kapak/e210_kapak.png",
         images: [
-            "https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1565514020125-bc28c89b3cb6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1542887800-cb64c4897f2e?q=80&w=2069&auto=format&fit=crop"
+            "/images/kapak/e210_kapak.png",
+            "/images/E210/MB13_038_E210_1.png",
+            "/images/E210/MB13_038_E210_2.png",
+            "/images/E210/MB13_038_E210_3.png",
+            "/images/E210/MB13_038_E210_4.png",
+            "/images/E210/MB13_038_E210_5.png",
+            "/images/E210/MB13_038_E210_6.png"
         ],
         specs: {
-            voltage: "400V",
-            current: "400A",
-            type: "Ana Dağıtım"
-        },
-        date: "2024-01"
+            type: "Steuerungsbau"
+        }
     },
     {
-        id: "proje-2",
-        title: "Fabrika Otomasyon Sistemi",
-        description: "PLC Kontrollü Motor Sürücü Panosu",
-        thumbnail: "https://images.unsplash.com/photo-1565514020125-bc28c89b3cb6?q=80&w=2070&auto=format&fit=crop",
+        id: "e500",
+        title: "Schaltschrank 2",
+        description: "Energieverteilungssystem",
+        thumbnail: "/images/kapak/e500_kapak.png",
         images: [
-            "https://images.unsplash.com/photo-1565514020125-bc28c89b3cb6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1518335345719-7925e0c52973?q=80&w=2069&auto=format&fit=crop"
+            "/images/kapak/e500_kapak.png",
+            "/images/E500/E500_1.png",
+            "/images/E500/=+ (1)_2.png",
+            "/images/E500/=+ (1)_3.png",
+            "/images/E500/=+ (1)_4.png",
+            "/images/E500/=+ (1)_5.png",
+            "/images/E500/=+ (1)_6.png"
         ],
         specs: {
-            voltage: "220V",
-            current: "50A",
-            type: "Otomasyon"
-        },
-        date: "2024-02"
+            type: "Energieverteilung"
+        }
     },
     {
-        id: "proje-3",
-        title: "Güneş Enerjisi Panosu",
-        description: "İnverter Bağlantı ve Koruma",
-        thumbnail: "https://images.unsplash.com/photo-1542887800-cb64c4897f2e?q=80&w=2069&auto=format&fit=crop",
+        id: "j1",
+        title: "Schaltschrank 3",
+        description: "Präzisionsmontage",
+        thumbnail: "/images/kapak/j1_kapak.png",
         images: [
-            "https://images.unsplash.com/photo-1542887800-cb64c4897f2e?q=80&w=2069&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=2070&auto=format&fit=crop"
+            "/images/kapak/j1_kapak.png",
+            "/images/J1/MB17_014_1 (1)_1.png",
+            "/images/J1/MB17_014_1 (1)_2.png",
+            "/images/J1/MB17_014_1 (1)_3.png",
+            "/images/J1/MB17_014_1 (1)_4.png"
         ],
         specs: {
-            voltage: "1000V DC",
-            current: "100A",
-            type: "Solar"
-        },
-        date: "2024-03"
+            type: "Anschlusslösung"
+        }
+    },
+    {
+        id: "mcc1",
+        title: "Schaltschrank 4",
+        description: "Zentrale Motorsteuerung",
+        thumbnail: "/images/kapak/mcc1_kapak.png",
+        images: [
+            "/images/kapak/mcc1_kapak.png",
+            "/images/MCC1/MB17_004_MCC1_1.png",
+            "/images/MCC1/MB17_004_MCC1_2.png",
+            "/images/MCC1/MB17_004_MCC1_3.png",
+            "/images/MCC1/MB17_004_MCC1_4.png",
+            "/images/MCC1/MB17_004_MCC1_5.png",
+            "/images/MCC1/MB17_004_MCC1_6.png"
+        ],
+        specs: {
+            type: "MCC"
+        }
     }
 ];

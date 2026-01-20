@@ -41,7 +41,7 @@ export function ProjectCard({ project, onClick, index }: ProjectCardProps) {
                 src={project.thumbnail}
                 alt={project.title}
                 fill
-                className="object-cover transition-all duration-1000 opacity-20 grayscale scale-100 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105"
+                className="object-contain object-center transition-all duration-1000 opacity-40 grayscale scale-100 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105"
                 sizes="25vw"
             />
 
@@ -53,17 +53,16 @@ export function ProjectCard({ project, onClick, index }: ProjectCardProps) {
                 }}
             />
 
-            {/* Subtle Grid Pattern overlay */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                 style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
 
-            <div className="absolute bottom-0 left-0 right-0 p-10 z-20">
-                <h3 className="text-xl font-bold tracking-widest uppercase text-white transform transition-transform duration-500 group-hover:-translate-y-2">
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 z-20">
+                <h3 className="text-lg md:text-xl font-bold tracking-widest uppercase text-white transform transition-transform duration-500 group-hover:-translate-y-2">
                     {project.title}
                 </h3>
                 <div className="h-[1px] w-0 bg-white transition-all duration-700 group-hover:w-full mt-2" />
                 <p className="mt-4 text-[9px] text-neutral-500 font-medium tracking-[0.3em] uppercase opacity-0 group-hover:opacity-100 transition-all duration-700 delay-100">
-                    {project.specs?.type} // View Project
+                    {project.specs?.type} // Details ansehen
                 </p>
             </div>
         </motion.div>
