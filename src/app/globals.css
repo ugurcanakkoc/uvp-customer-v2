@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+}
+
+@layer base {
+  body {
+    @apply selection:bg-white/20 selection:text-white bg-[#050505] text-white h-screen overflow-hidden antialiased font-sans;
+  }
+}
+
+@layer utilities {
+  .smoke-bg {
+    background:
+      radial-gradient(circle at 50% 50%, #111111 0%, #050505 100%),
+      radial-gradient(circle at 20% 30%, #1a1a1a 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, #151515 0%, transparent 40%);
+    background-blend-mode: screen;
+  }
+
+  .spotlight-global {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.03),
+        transparent 40%);
+  }
+
+  .luxury-heading {
+    @apply text-[10px] uppercase tracking-[0.6em] font-medium text-neutral-600;
+  }
+}
