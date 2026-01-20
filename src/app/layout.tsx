@@ -7,8 +7,12 @@ import { Footer } from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ElektroTech | Profesyonel Elektrik Panoları",
-  description: "Endüstriyel ve ticari elektrik panosu çözümleri.",
+  title: "UVP Schaltschrankbau | Portfolio",
+  description: "Präzisions-Schaltschrankbau und industrielle Automatisierungslösungen.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
