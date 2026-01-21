@@ -44,12 +44,22 @@ export function ProjectGallery({ projects }: ProjectGalleryProps) {
                     close={() => setLightboxOpen(false)}
                     slides={activeProject.images.map((src) => ({ src }))}
                     plugins={[Zoom, Captions, Thumbnails]}
+                    carousel={{ finite: false }}
                     styles={{
-                        container: { backgroundColor: "rgba(0, 0, 0, .95)" },
+                        container: { backgroundColor: "rgba(0, 0, 0, .98)" },
                     }}
                     zoom={{
                         maxZoomPixelRatio: 3,
                         scrollToZoom: true,
+                    }}
+                    thumbnails={{
+                        position: "bottom",
+                        width: 120,
+                        height: 80,
+                        gap: 12,
+                        padding: 16,
+                        imageFit: "cover",
+                        vignette: false,
                     }}
                     captions={{ showToggle: true, descriptionTextAlign: 'center' }}
                 />

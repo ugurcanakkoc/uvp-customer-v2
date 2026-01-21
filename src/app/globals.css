@@ -36,3 +36,39 @@
     @apply text-[10px] uppercase tracking-[0.6em] font-medium text-neutral-600;
   }
 }
+
+/* Lightbox Customization */
+:root {
+  --yarl__thumbnails_thumbnail_active_border: 2px solid #ffffff;
+  --yarl__thumbnails_thumbnail_active_opacity: 1;
+  --yarl__thumbnails_thumbnail_opacity: 0.35;
+  --yarl__thumbnails_thumbnail_background: transparent;
+  --yarl__thumbnails_container_background: rgba(0, 0, 0, 0.4);
+}
+
+.yarl__thumbnails_container {
+  padding: 20px !important;
+}
+
+.yarl__thumbnails_thumbnail {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+}
+
+.yarl__thumbnails_thumbnail_active {
+  border: 2px solid #ffffff !important;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.4) !important;
+  z-index: 10;
+}
+
+/* Kütüphanenin kendi border değişkenini de güncelleyelim ki geçişlerde kaybolmasın */
+.yarl__thumbnails_thumbnail_active {
+  --yarl__thumbnails_thumbnail_active_border: 2px solid #ffffff;
+}
+
+.yarl__thumbnails_thumbnail img {
+  object-fit: cover !important;
+}
